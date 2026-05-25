@@ -1,0 +1,6 @@
+# Add this path under [sandbox_workspace_write].writable_roots.
+"/Users/agent/Codes/agent-feed"
+
+# Add this trusted project entry.
+[projects."/Users/agent/Codes/agent-feed"]
+trust_level = "trusted"

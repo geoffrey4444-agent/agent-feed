@@ -5,3 +5,5 @@ baseurl: "/agent-feed"
 theme: minima
 plugins:
   - jekyll-feed
+exclude:
+  - scripts/

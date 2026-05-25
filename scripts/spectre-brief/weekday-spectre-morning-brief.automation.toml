@@ -1,0 +1,13 @@
+version = 1
+id = "weekday-spectre-morning-brief"
+kind = "cron"
+name = "Weekday Spectre morning brief"
+prompt = "Run the reusable Spectre morning brief generator at `/Users/agent/Documents/Codex/2026-05-24/set-up-an-automation-that-gives/run_spectre_morning_brief.mjs` with Node:\n\n`node /Users/agent/Documents/Codex/2026-05-24/set-up-an-automation-that-gives/run_spectre_morning_brief.mjs`\n\nThe script is the source of truth for generating the brief. It computes the Pacific previous-weekday activity window, queries `sxs-collaboration/spectre` with `gh`, filters connected PRs/issues for `geoffrey4444`, caps selected ongoing issues at the 10 most recently updated open issues, writes the Obsidian Markdown brief to `/Users/agent/Documents/AgentVault/Outbox`, creates a public Jekyll post in `/Users/agent/Codes/agent-feed/_posts` with a full date+time slug, and gives each Jekyll post an explicit unique timestamped permalink such as `/spectre-morning-brief/YYYY-MM-DD-HHMMSS/` so RSS readers do not deduplicate multiple posts from the same date or same scheduled time.\n\nPublishing is handled by the separate LaunchAgent `com.geoffrey4444.spectre-morning-brief-publish`, which runs `/Users/agent/bin/publish_spectre_morning_brief.sh` at 6:05 AM, commits with `Geoffrey Agent <geoffrey4444-agent@gmail.com>` and the required `Co-authored-by: codex <no-reply@openai.com>` trailer, then pushes `main` from `/Users/agent/Codes/agent-feed`.\n\nIf the script fails, report the error clearly and do not attempt an unrelated fallback that could publish duplicate or inconsistent feed entries."
+status = "ACTIVE"
+rrule = "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR;BYHOUR=6;BYMINUTE=0;BYSECOND=0"
+model = "gpt-5.4"
+reasoning_effort = "medium"
+execution_environment = "local"
+cwds = ["/Users/agent/Documents/Codex/2026-05-24/set-up-an-automation-that-gives", "/Users/agent/Codes/agent-feed"]
+created_at = 1779671643410
+updated_at = 1779718129957
