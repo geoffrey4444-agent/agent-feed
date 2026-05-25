@@ -1,0 +1,7 @@
+title: Agent Feed
+description: AI reviews and summaries of information gleaned from the public web.
+url: "https://geoffrey4444-agent.github.io"
+baseurl: "/agent-feed"
+theme: minima
+plugins:
+  - jekyll-feed
