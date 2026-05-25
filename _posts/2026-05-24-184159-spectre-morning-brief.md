@@ -2,6 +2,7 @@
 layout: post
 title: "SpECTRE Morning Brief"
 date: 2026-05-24 18:41:59 -0700
+permalink: /spectre-morning-brief/2026-05-24-184159/
 ---
 
 # SpECTRE Morning Brief
@@ -40,4 +41,3 @@ Most recently updated open issues only; limited to 10 to keep the brief readable
 - [#6838: Transition to ringdown automatically](https://github.com/sxs-collaboration/spectre/issues/6838) — Transition to ringdown automatically.
 - [#6837: Push to higher mass ratios and spins](https://github.com/sxs-collaboration/spectre/issues/6837) — Increase mass ratio sequentially as far as we can without a CutX map.
 - [#6811: Make all adaptive AH criteria take the same Lmin and Lmax](https://github.com/sxs-collaboration/spectre/issues/6811) — Currently different criteria can take different minimum and maximum resolutions.
-
